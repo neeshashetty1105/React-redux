@@ -1,7 +1,6 @@
-import uuid from 'uuid';
 
 export const addCelebrity = ({
-    rank = '',
+    rank = 0,
     name = '',
     netWorth = '',
     age = '',

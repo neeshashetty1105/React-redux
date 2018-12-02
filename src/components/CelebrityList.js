@@ -1,21 +1,31 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {
+    connect
+} from 'react-redux';
 import Celebrity from './Celebrity';
 import getVisibleCelebrities from '../selectors/celebrities';
 
 const CelebrityList = (props) => (
 
-<div >
-            {props.celebrities.map(celebrity => {
-                return (
-                    <tr key={celebrity.id}>
-                        <Celebrity {...celebrity} />
-                    </tr>
-                );
-            })}
+    <
+    div > {
+        props.celebrities.map(celebrity => {
+            return ( <
+                tr key = {
+                    celebrity.id
+                } >
+                <
+                Celebrity { ...celebrity
+                }
+                /> <
+                /tr>
+            );
+        })
+    }
 
 
-</div>
+    <
+    /div>
 
 );
 

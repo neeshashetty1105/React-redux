@@ -2,22 +2,30 @@ import React from 'react';
 import CelebrityList from './CelebrityList';
 import CelebrityFilter from './CelebrityFilter';
 
-const DashBoard = () => (
-    <div>
- <table className="centered-table"  border="1">
+const DashBoard = () => ( <
+    div >
+    <
+    table className = "centered-table"
+    border = "1" >
 
- <CelebrityFilter />
+    <
+    CelebrityFilter / >
 
-    <table width="350" border="1">
+    <
+    table width = "350"
+    border = "1" >
 
 
 
-        <CelebrityList />
+    <
+    CelebrityList / >
 
-                        </table>
+    <
+    /table>
 
-             </table>
-    </div>
+    <
+    /table> <
+    /div>
 );
 
 export default DashBoard;

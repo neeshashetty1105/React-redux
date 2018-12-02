@@ -1,7 +1,7 @@
 const filtersReducerDefaultState = {
     text: '',
-    sortBy: 'rank',
-currency:'usd'
+    sortBy: '',
+    currency:''
 };
 
 export default (state = filtersReducerDefaultState, action) => {
