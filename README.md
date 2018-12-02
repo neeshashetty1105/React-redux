@@ -1,15 +1,14 @@
 ## Install
 
 Install with [yarn](https://yarnpkg.com/):
+
 ### yarn install
 
 **Having installation troubles? Check out our [Troubleshooting guide](https://github.com/sass/node-sass/blob/master/TROUBLESHOOTING.md).**
 
-### Install node-sass separately
-
+Install node-sass separately
 
 ### yarn install node-sass
-
 
 
 ## Available Scripts
@@ -31,6 +30,7 @@ Deploys the build on production.<br>
 Alternatively, you can run
 
 ### `yarn run dev-server`
+
 
 Deploys and runs the build locally
 
