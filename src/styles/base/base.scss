@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%;
+       display: table;
+        margin: auto;
+}
+
+body {
+    font-family:  Calibri;
+    font-size: $m-size;
+     display: table-cell;
+        vertical-align: middle;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+
+
+.activeNav {
+    font-weight: bold;
+}
+
+
+.centered-table {
+    padding: 40px 150px;
+
+}
+
+#div2 {
+    display: block;
+
+     margin-left:auto;
+      margin-right:auto;
+
+
+}
+
+
+
+
+table {
+
+
+background-color:#EAEFF9;
+}
+
+
+tr td {
+
+  width: 155%;
+  border: none;
+  display: block;
+
+}
+
+
+
+.form-group {
+
+   display:inline-block;
+   width: 50%;
+
+    padding-top: 5px;
+       padding-bottom: 5px;
+
+}
+
+.form-label {
+display:block;
+    text-align: left;
+}
+.form-input{
+
+     height: 40px;
+    width: 90%;
+}
+
+#div1 {
+
+    float: left;
+     width:50%;
+}
+
+
+
+
+
+
