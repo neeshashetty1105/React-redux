@@ -7,6 +7,7 @@ import {
 const Celebrity = ({
     rank,
     name,
+    currency_type,
     netWorth,
     age,
     country,
@@ -20,7 +21,7 @@ const Celebrity = ({
     td > < p > Name: {
         name
     } < /p> <
-    p > Net Worth: {
+    p > Net Worth: {currency_type}  {
         netWorth
     } < /p> <
     p > Age: {

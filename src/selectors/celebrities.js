@@ -18,13 +18,16 @@ export default (celebrities, {
         }
 
         if (currency === 'usd') {
-            celebrity.netWorth = celebrity.netWorth * 1
+        celebrity.currency_type = 'USD';
+            celebrity.netWorth = celebrity.netWorth * 1;
             textMatch = true;
         } else if (currency === 'euro') {
-            celebrity.netWorth = celebrity.netWorth * 0.92
+        celebrity.currency_type = 'EUR';
+            celebrity.netWorth = celebrity.netWorth * 0.92;
             textMatch = true;
         } else if (currency === 'aud') {
-            celebrity.netWorth = celebrity.netWorth * 0.78
+        celebrity.currency_type = 'AUD';
+            celebrity.netWorth = celebrity.netWorth * 0.78;
             textMatch = true;
         }
 

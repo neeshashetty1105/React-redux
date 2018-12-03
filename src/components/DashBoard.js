@@ -20,6 +20,7 @@ const DashBoard = () => ( <
     <
     CelebrityList / >
 
+
     <
     /table>
 

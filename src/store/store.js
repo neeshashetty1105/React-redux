@@ -9,12 +9,13 @@ const demoState = {
     celebrities: [{
         id: '123abcdefghiklmn',
         name: "Rupert Murdoch",
+        currency_type: "USD",
         netWorth: 14000000000,
         age: "84",
         country: "Australia"
     }],
     filters: {
-        text: 'ori',
+        text: 'jo',
         sortBy: '',
         currency: ''
     }

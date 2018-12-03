@@ -3,36 +3,55 @@ import {
     connect
 } from 'react-redux';
 import Celebrity from './Celebrity';
+import {
+    filterText,
+    startYear,
+    endYear
+} from '../actions/filters';
 import getVisibleCelebrities from '../selectors/celebrities';
 
-const CelebrityList = (props) => (
+class CelebrityList extends React.Component {
+        constructor(props) {
+            super(props);
 
-    <
-    div > {
-        props.celebrities.map(celebrity => {
-            return ( <
-                tr key = {
-                    celebrity.id
-                } >
-                <
-                Celebrity { ...celebrity
+        }
+
+
+
+        render() {
+            let {
+                data = []
+            } = this.props.celebrities;
+            console.log(this.props.celebrities)
+
+            console.log("data.length = " + this.props.celebrities.length)
+            if (!this.props.celebrities.length)
+                return (< tr bgcolor = "#3A639D" > No data found < /tr>);
+
+                    return (
+                        this.props.celebrities.map(celebrity => {
+                            console.log("here2")
+                            return ( <div><
+                                tr key = {
+                                    celebrity.rank
+                                } >
+                                <
+                                Celebrity { ...celebrity
+                                }
+                                /> <
+                                /tr>
+                                </div>
+                            );
+
+                        })
+                    );
                 }
-                /> <
-                /tr>
-            );
-        })
-    }
+        }
 
+        const mapStateToProps = (state) => {
+            return {
+                celebrities: getVisibleCelebrities(state.celebrities, state.filters)
+            }
+        }
 
-    <
-    /div>
-
-);
-
-const mapStateToProps = (state) => {
-    return {
-        celebrities: getVisibleCelebrities(state.celebrities, state.filters)
-    };
-}
-
-export default connect(mapStateToProps)(CelebrityList);
+        export default connect(mapStateToProps)(CelebrityList);
