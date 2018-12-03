@@ -4,7 +4,7 @@ import {
 }
 from 'react-redux';
 import {
-    filterText, sortBy, updateCurrency, clear
+    filterText, sortBy, currency, clear
 }
 from '../actions/filters';
 class CelebrityFilters extends React.Component {
@@ -27,7 +27,20 @@ class CelebrityFilters extends React.Component {
                     this.props.dispatch(filterText(e.target.value))
                 }
             } >
-            < option value = "showAll" > Show All < /option> < option value = "united states" > United States < /option> < option value = "australia" > Australia < /option> < option value = "United Kingdom" > United Kingdom < /option> < option value = "Italy" > Italy < /option> < /select> < /p>
+            < option value = "showAll" > Show All < /option> < option value = "united states" > United States < /option> < option value = "australia" > Australia < /option> < option value = "United Kingdom" > United Kingdom < /option> < option value = "Italy" > Italy < /option>
+            < option value = "Israel" > Israel</option>
+            < option value = "Poland" > Poland</option>
+            < option value = "India" > India</option>
+            < option value = "Brazil" > Brazil</option>
+            < option value = "Canada" > Canada</option>
+            < option value = "South Africa" > South Africa</option>
+            < option value = "Netherlands" > Netherlands</option>
+            < option value = "Tunisia" > Tunisia</option>
+            < option value = "France" > France</option>
+            < option value = "Germany" > Germany</option>
+            < option value = "Ireland" > Ireland</option>
+            < option value = "Saudi Arabia" > Saudi Arabia</option>
+            < /select> < /p>
 
               < label className = "form-label" > Search: < /label> < p >
                         < input className = "form-input"
@@ -53,7 +66,7 @@ class CelebrityFilters extends React.Component {
                         onChange = {
                             (e) => {
                                 this.props.dispatch(clear());
-                                this.props.dispatch(updateCurrency(e.target.value));
+                                this.props.dispatch(currency(e.target.value));
                             }
                         } >
                         < option value = "usd" > US Dollar < /option> < option value = "euro" > Euro < /option> < option value = "aud" > Australian Dollar < /option>
