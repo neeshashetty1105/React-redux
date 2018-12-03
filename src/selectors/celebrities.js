@@ -6,7 +6,7 @@ export default (celebrities, {
 }) => {
     return celebrities.filter(celebrity => {
 
-        var textMatch = '';
+        var textMatch = true;
 
         if (text != 'showAll') {
             textMatch =

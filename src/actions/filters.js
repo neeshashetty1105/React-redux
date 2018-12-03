@@ -3,12 +3,12 @@ export const filterText = (text = '') => ({
     text
 });
 
-export const sortBy = (sortType) => ({
+export const sortBy = (sortBy) => ({
     type: 'SORT_BY',
-    sortType
+    sortBy
 });
 
-export const updateCurrency = (currency = '') => ({
+export const currency = (currency = '') => ({
     type: 'CURRENCY_TYPE',
     currency
 });
