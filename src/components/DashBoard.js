@@ -12,7 +12,7 @@ const DashBoard = () => ( <
     CelebrityFilter / >
 
     <
-    table width = "350"
+    table
     border = "1" >
 
 

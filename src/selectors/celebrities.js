@@ -18,16 +18,33 @@ export default (celebrities, {
         }
 
         if (currency === 'usd') {
-        celebrity.currency_type = 'USD';
-            celebrity.netWorth = celebrity.netWorth * 1;
+
+            if (celebrity.currency_type === 'EUR') {
+                celebrity.netWorth = Math.round(celebrity.netWorth * 1.08695652173913);
+            }
+            if (celebrity.currency_type === 'AUD') {
+                celebrity.netWorth = Math.round(celebrity.netWorth * 0.78);
+            }
+            celebrity.currency_type = 'USD';
             textMatch = true;
         } else if (currency === 'euro') {
-        celebrity.currency_type = 'EUR';
-            celebrity.netWorth = celebrity.netWorth * 0.92;
+            if (celebrity.currency_type === 'USD') {
+                celebrity.netWorth = Math.round(celebrity.netWorth * 0.92);
+            }
+            if (celebrity.currency_type === 'AUD') {
+                celebrity.netWorth = Math.round(celebrity.netWorth * 0.8478260869565217);
+            }
+            celebrity.currency_type = 'EUR';
             textMatch = true;
         } else if (currency === 'aud') {
-        celebrity.currency_type = 'AUD';
-            celebrity.netWorth = celebrity.netWorth * 0.78;
+
+            if (celebrity.currency_type === 'USD') {
+                celebrity.netWorth = Math.round(celebrity.netWorth * 1.282051282051282);
+            }
+            if (celebrity.currency_type === 'EUR') {
+                celebrity.netWorth = Math.round(celebrity.netWorth * 1.179487179487179);
+            }
+            celebrity.currency_type = 'AUD';
             textMatch = true;
         }
 

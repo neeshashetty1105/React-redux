@@ -15,21 +15,21 @@ html {
  .activeNav {
      font-weight: bold;
 }
- .centered-table {
-     padding: 40px 150px;
+
+.centered-table {
+   padding: 10px 100px;
+   margin-left: auto;
+   margin-right: auto;
 }
- #div2 {
-     display: block;
-     margin-left:auto;
-     margin-right:auto;
-}
+
  table {
-     background-color:#EAEFF9;
+    border-spacing: 1em 1em;
+    background-color:#EAEFF9;
 }
  tr td {
-     width: 155%;
-     border: none;
-     display: block;
+  padding: 10px 180px;
+    border: none;
+    display: block;
 }
  .form-group {
      display:inline-block;
