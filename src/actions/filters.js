@@ -15,8 +15,8 @@ export const updateCurrency = (currency = '') => ({
 
 const filtersReducerDefaultState = {
    text: '',
-    sortBy: 'rank',
-    currency:'usd'
+    sortBy: '',
+    currency:''
 };
 
 export const clear = () => ({

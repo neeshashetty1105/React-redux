@@ -1,16 +1,17 @@
-import uuid from 'uuid';
 
 export const addCelebrity = ({
-    rank = '',
+    rank = 0,
     name = '',
+    currency_type='',
     netWorth = '',
     age = '',
-    country = 0
+    country = ''
 } = {}) => ({
     type: 'ADD_CELEBRITY',
     celebrity: {
         rank,
         name,
+        currency_type,
         netWorth,
         age,
         country

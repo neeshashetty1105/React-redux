@@ -1,90 +1,51 @@
 html {
-    font-size: 62.5%;
-       display: table;
-        margin: auto;
+     font-size: 62.5%;
+     display: table;
+     margin: auto;
 }
-
-body {
-    font-family:  Calibri;
-    font-size: $m-size;
+ body {
+     font-family: Calibri;
+     font-size: $m-size;
      display: table-cell;
-        vertical-align: middle;
+     vertical-align: middle;
 }
-
-
-html, body {
-    height: 100%;
+ html, body {
+     height: 100%;
 }
-
-
-
-.activeNav {
-    font-weight: bold;
+ .activeNav {
+     font-weight: bold;
 }
-
 
 .centered-table {
-    padding: 40px 150px;
-
+   padding: 10px 100px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-#div2 {
+ table {
+    border-spacing: 1em 1em;
+    background-color:#EAEFF9;
+}
+ tr td {
+  padding: 10px 180px;
+    border: none;
     display: block;
-
-     margin-left:auto;
-      margin-right:auto;
-
-
 }
-
-
-
-
-table {
-
-
-background-color:#EAEFF9;
+ .form-group {
+     display:inline-block;
+     width: 50%;
+     padding-top: 5px;
+     padding-bottom: 5px;
 }
-
-
-tr td {
-
-  width: 155%;
-  border: none;
-  display: block;
-
+ .form-label {
+     display:block;
+     text-align: left;
 }
-
-
-
-.form-group {
-
-   display:inline-block;
-   width: 50%;
-
-    padding-top: 5px;
-       padding-bottom: 5px;
-
-}
-
-.form-label {
-display:block;
-    text-align: left;
-}
-.form-input{
-
+ .form-input{
      height: 40px;
-    width: 90%;
+     width: 90%;
 }
-
-#div1 {
-
-    float: left;
+ #div1 {
+     float: left;
      width:50%;
 }
-
-
-
-
-
-

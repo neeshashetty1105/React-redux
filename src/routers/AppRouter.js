@@ -6,22 +6,22 @@ import Help from '../components/Help';
 import NotFound from '../components/NotFound';
 
 const routes = (
-    <Switch>
-      <Route path="/" component={DashBoard} exact={true} />
-                 <Route path="/help" component={Help} />
-                 <Route component={NotFound} />
-                     </Switch>
-);
 
+<Switch>
+   <Route path="/" component={DashBoard} exact={true} />
+   <Route path="/help" component={Help} />
+   <Route component={NotFound} />
+</Switch>
+
+);
 const AppRouter = () => (
-    <BrowserRouter>
-        <div className='container'>
-            <Header />
 
-{routes}
+<BrowserRouter>
+   <div className='container'>
+      <Header />
+      {routes}
+   </div>
+</BrowserRouter>
 
-        </div>
-    </BrowserRouter>
 );
-
 export default AppRouter;
