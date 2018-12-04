@@ -8,35 +8,42 @@ export default (celebrities, {
 
         var textMatch = true;
 
+        if (text != 'showAll') {
+            textMatch =
+                celebrity.name.toLowerCase().includes(text.toLowerCase()) ||
+                celebrity.country.toLowerCase().includes(text.toLowerCase()) || celebrity.age.includes(text) || celebrity.netWorth.includes(text);
+
+        }
+
         if (currency === 'usd') {
 
             if (celebrity.currency_type === 'EUR') {
-                celebrity.netWorth = Math.round(celebrity.netWorth * 1.08695652173913);
+                celebrity.netWorth = Math.round(celebrity.netWorth * 1.08695652173913).toString();
             }
             if (celebrity.currency_type === 'AUD') {
-                celebrity.netWorth = Math.round(celebrity.netWorth * 0.78);
+                celebrity.netWorth = Math.round(celebrity.netWorth * 0.78).toString();
             }
             celebrity.currency_type = 'USD';
-            textMatch = true;
+
         } else if (currency === 'euro') {
             if (celebrity.currency_type === 'USD') {
-                celebrity.netWorth = Math.round(celebrity.netWorth * 0.92);
+                celebrity.netWorth = Math.round(celebrity.netWorth * 0.92).toString();
             }
             if (celebrity.currency_type === 'AUD') {
-                celebrity.netWorth = Math.round(celebrity.netWorth * 0.8478260869565217);
+                celebrity.netWorth = Math.round(celebrity.netWorth * 0.8478260869565217).toString();
             }
             celebrity.currency_type = 'EUR';
-            textMatch = true;
+
         } else if (currency === 'aud') {
 
             if (celebrity.currency_type === 'USD') {
-                celebrity.netWorth = Math.round(celebrity.netWorth * 1.282051282051282);
+                celebrity.netWorth = Math.round(celebrity.netWorth * 1.282051282051282).toString();
             }
             if (celebrity.currency_type === 'EUR') {
-                celebrity.netWorth = Math.round(celebrity.netWorth * 1.179487179487179);
+                celebrity.netWorth = Math.round(celebrity.netWorth * 1.179487179487179).toString();
             }
             celebrity.currency_type = 'AUD';
-            textMatch = true;
+
         }
 
 
