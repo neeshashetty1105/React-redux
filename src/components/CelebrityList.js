@@ -6,7 +6,8 @@ import Celebrity from './Celebrity';
 import {
     filterText,
     sortBy,
-   currency
+   currency,
+   country
 } from '../actions/filters';
 import getVisibleCelebrities from '../selectors/celebrities';
 

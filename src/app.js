@@ -8,7 +8,8 @@ import {
 import {
     filterText,
     sortBy,
-    currency
+    currency,
+    country
 } from './actions/filters';
 import getVisibleCelebrities from './selectors/celebrities';
 import './styles/styles.scss';

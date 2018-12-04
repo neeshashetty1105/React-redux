@@ -2,17 +2,20 @@
 export default (celebrities, {
     text,
     sortBy,
-    currency
+    currency,
+    country
 }) => {
     return celebrities.filter(celebrity => {
 
-        var textMatch = true;
 
-        if (text != 'showAll') {
-            textMatch =
+        var countryMatch = true;
+
+        var  textMatch =
                 celebrity.name.toLowerCase().includes(text.toLowerCase()) ||
                 celebrity.country.toLowerCase().includes(text.toLowerCase()) || celebrity.age.includes(text) || celebrity.netWorth.includes(text);
 
+        if (country != 'showAll') {
+                countryMatch = celebrity.country.toLowerCase().includes(country.toLowerCase());
         }
 
         if (currency === 'usd') {
@@ -48,7 +51,7 @@ export default (celebrities, {
 
 
         console.log("text" + textMatch);
-        return textMatch;
+        return textMatch && countryMatch;
 
 
     }).sort((celebrity1, celebrity2) => {

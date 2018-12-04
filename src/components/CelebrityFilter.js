@@ -4,7 +4,7 @@ import {
 }
 from 'react-redux';
 import {
-    filterText, sortBy, currency, clear
+    filterText, sortBy, currency, clear,country
 }
 from '../actions/filters';
 class CelebrityFilters extends React.Component {
@@ -24,7 +24,7 @@ class CelebrityFilters extends React.Component {
             }
             onChange = {
                 (e) => {
-                    this.props.dispatch(filterText(e.target.value))
+                    this.props.dispatch(country(e.target.value))
                 }
             } >
             < option value = "showAll" > Show All < /option> < option value = "united states" > United States < /option> < option value = "australia" > Australia < /option> < option value = "United Kingdom" > United Kingdom < /option> < option value = "Italy" > Italy < /option>

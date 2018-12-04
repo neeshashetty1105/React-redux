@@ -1,5 +1,6 @@
 const filtersReducerDefaultState = {
     text: '',
+    country:'',
     sortBy: '',
     currency:''
 };
@@ -10,6 +11,11 @@ export default (state = filtersReducerDefaultState, action) => {
             return {
                 ...state,
                 text: action.text
+            };
+        case 'COUNTRY':
+             return {
+                ...state,
+                text: action.country
             };
 
         case 'SORT_BY':

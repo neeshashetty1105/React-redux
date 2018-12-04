@@ -17,7 +17,8 @@ const demoState = {
     filters: {
         text: 'jo',
         sortBy: '',
-        currency: ''
+        currency: '',
+        country: ''
     }
 };
 

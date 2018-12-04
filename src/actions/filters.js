@@ -3,6 +3,11 @@ export const filterText = (text = '') => ({
     text
 });
 
+export const country = (country = '') => ({
+    type: 'COUNTRY',
+    country
+});
+
 export const sortBy = (sortBy) => ({
     type: 'SORT_BY',
     sortBy
@@ -16,7 +21,8 @@ export const currency = (currency = '') => ({
 const filtersReducerDefaultState = {
    text: '',
     sortBy: '',
-    currency:''
+    currency:'',
+    country:''
 };
 
 export const clear = () => ({
