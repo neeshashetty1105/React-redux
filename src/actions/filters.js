@@ -9,7 +9,7 @@ export const sortBy = (sortBy) => ({
 });
 
 export const currency = (currency = '') => ({
-    type: 'CURRENCY_TYPE',
+    type: 'CURRENCY',
     currency
 });
 

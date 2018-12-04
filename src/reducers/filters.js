@@ -17,7 +17,7 @@ export default (state = filtersReducerDefaultState, action) => {
                 ...state,
                 sortBy: action.sortBy
             };
-        case 'CURRENCY_TYPE':
+        case 'CURRENCY':
             return {
                 ...state,
                currency: action.currency
