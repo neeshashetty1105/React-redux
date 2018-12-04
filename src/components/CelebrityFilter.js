@@ -65,7 +65,6 @@ class CelebrityFilters extends React.Component {
                         }
                         onChange = {
                             (e) => {
-                                this.props.dispatch(clear());
                                 this.props.dispatch(currency(e.target.value));
                             }
                         } >
