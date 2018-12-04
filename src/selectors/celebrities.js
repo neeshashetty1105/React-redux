@@ -8,15 +8,6 @@ export default (celebrities, {
 
         var textMatch = true;
 
-        if (text != 'showAll') {
-            textMatch =
-                celebrity.name.toLowerCase().includes(text.toLowerCase()) ||
-                celebrity.country.toLowerCase().includes(text.toLowerCase()) || celebrity.age.includes(text) || celebrity.netWorth.includes(text);
-
-        } else {
-            textMatch = true;
-        }
-
         if (currency === 'usd') {
 
             if (celebrity.currency_type === 'EUR') {
